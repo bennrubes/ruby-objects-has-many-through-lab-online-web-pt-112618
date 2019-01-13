@@ -17,6 +17,7 @@ class Artist
   end
   
   def songs
-    
+    Song.all.select do |meal|
+      meal.customer == self
   end
 end
